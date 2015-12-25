@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="334 37 1280 720" style="enable-background:new 334 37 1280 720;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.65;stroke:#1E4675;stroke-width:3;stroke-miterlimit:10;enable-background:new    ;}
+	.st1{opacity:0.5;fill:#0854BB;enable-background:new    ;}
+	.st2{fill:#FFFFFE;}
+	.st3{font-family:'ArialMT';}
+	.st4{font-size:20px;}
+	.st5{fill:#FDEC75;}
+	.st6{font-family:'Arial-BoldMT';}
+	.st7{font-size:16px;}
+	.st8{opacity:0.3;fill:#2D6BAA;enable-background:new    ;}
+	.st9{opacity:0.6;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;enable-background:new    ;}
+	.st10{fill:#FFFFFF;}
+	.st11{font-size:12px;}
+	.st12{font-size:22px;}
+	.st13{opacity:1.000000e-004;fill:#FFFFFF;enable-background:new    ;}
+</style>
+<g id="playgame">
+	<g id="groupbangxephang">
+		<path class="st0" d="M432.5,186.5h799c16.6,0,30,13.4,30,30v480c0,16.6-13.4,30-30,30h-799c-16.6,0-30-13.4-30-30v-480
+			C402.5,199.9,415.9,186.5,432.5,186.5z"/>
+		<rect x="427.5" y="247.5" class="st1" width="817" height="45"/>
+		<text transform="matrix(1 0 0 1 455.4141 278)" class="st2 st3 st4">Hạng: </text>
+		<text transform="matrix(1 0 0 1 514.3401 278)" class="st5 st3 st4">25</text>
+		<text transform="matrix(1 0 0 1 769.5001 278)" class="st2 st3 st4">Lớp: </text>
+		<text transform="matrix(1 0 0 1 815.9751 278)" class="st5 st3 st4">QTH10</text>
+		<text transform="matrix(1 0 0 1 969.1631 278)" class="st2 st3 st4"> Tổng LTTNPoint: </text>
+		<text transform="matrix(1 0 0 1 1129.8621 278)" class="st5 st3 st4">1.000.000</text>
+		<text transform="matrix(1 0 0 1 732.6484 333.5)" class="st5 st6 st7">BẢNG XẾP HẠNG TOP 10</text>
+		<rect x="436.5" y="343.5" class="st8" width="768" height="35.5"/>
+		<line class="st9" x1="436.5" y1="343.5" x2="436.5" y2="641.5"/>
+		<line class="st9" x1="505" y1="343.5" x2="505" y2="641.5"/>
+		<line class="st9" x1="812.5" y1="343" x2="812.5" y2="641"/>
+		<line class="st9" x1="901" y1="343.5" x2="901" y2="641.5"/>
+		<line class="st9" x1="1204.5" y1="343" x2="1204.5" y2="641"/>
+		<text transform="matrix(1 0 0 1 450.5 367)" class="st10 st6 st7">Hạng</text>
+		<text transform="matrix(1 0 0 1 490.5 367)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 550.5 367)" class="st10 st6 st7">Họ &amp; Tên</text>
+		<text transform="matrix(1 0 0 1 620.7188 367)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 835.5 367)" class="st10 st6 st7">Lớp</text>
+		<text transform="matrix(1 0 0 1 866.4219 367)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 1098.5 367)" class="st10 st6 st7">LTTNPoint</text>
+		<text transform="matrix(1 0 0 1 460 401)" class="st5 st6 st7">01</text>
+		<text transform="matrix(1 0 0 1 477.7969 401)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 460 447)" class="st5 st6 st7">02</text>
+		<text transform="matrix(1 0 0 1 477.7969 447)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 460 493)" class="st5 st6 st7">03</text>
+		<text transform="matrix(1 0 0 1 477.7969 493)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 460 539)" class="st10 st6 st7">04</text>
+		<text transform="matrix(1 0 0 1 477.7969 539)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 460 585)" class="st10 st6 st7">05</text>
+		<text transform="matrix(1 0 0 1 477.7969 585)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 460 631)" class="st10 st6 st7">06</text>
+		<text transform="matrix(1 0 0 1 549 400)" class="st10 st3 st7">Nguyễn Văn Anh</text>
+		<text transform="matrix(1 0 0 1 669.0938 400)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 549 446)" class="st10 st3 st7">Nguyễn Hồng Thơm</text>
+		<text transform="matrix(1 0 0 1 693.4922 446)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 549 492)" class="st10 st3 st7">Nguyễn Tuấn Anh</text>
+		<text transform="matrix(1 0 0 1 676.2109 492)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 549 538)" class="st10 st3 st7">Lê Xuân Công</text>
+		<text transform="matrix(1 0 0 1 651.3047 538)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 549 584)" class="st10 st3 st7">Trần Thị Phương</text>
+		<text transform="matrix(1 0 0 1 670.7031 584)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 549 630)" class="st10 st3 st7">Trần Thế Giang</text>
+		<text transform="matrix(1 0 0 1 831 401)" class="st10 st3 st7">QTH01</text>
+		<text transform="matrix(1 0 0 1 882.5703 401)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 831 447)" class="st10 st3 st7">QTH03</text>
+		<text transform="matrix(1 0 0 1 882.5703 447)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 831 493)" class="st10 st3 st7">QTH03</text>
+		<text transform="matrix(1 0 0 1 882.5703 493)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 831 539)" class="st10 st3 st7">QTH05</text>
+		<text transform="matrix(1 0 0 1 882.5703 539)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 831 585)" class="st10 st3 st7">QTH02</text>
+		<text transform="matrix(1 0 0 1 882.5703 585)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 831 631)" class="st10 st3 st7">QTH10</text>
+		<text transform="matrix(1 0 0 1 1100.5234 400)" class="st10 st3 st7">235.000.000</text>
+		<text transform="matrix(1 0 0 1 1189.5 400)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 1100.5234 446)" class="st10 st3 st7">235.000.000</text>
+		<text transform="matrix(1 0 0 1 1189.5 446)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 1100.5234 492)" class="st10 st3 st7">128.000.000</text>
+		<text transform="matrix(1 0 0 1 1189.5 492)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 1100.5234 538)" class="st10 st3 st7">120.000.000</text>
+		<text transform="matrix(1 0 0 1 1189.5 538)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 1100.5234 584)" class="st10 st3 st7">104.000.000</text>
+		<text transform="matrix(1 0 0 1 1189.5 584)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 1109.4214 630)" class="st10 st3 st7">99.000.000</text>
+		<text transform="matrix(1 0 0 1 679.6631 230)" class="st10 st6 st12">HỌ VÀ TÊN:</text>
+		<text transform="matrix(1 0 0 1 806.7754 230)" class="st3 st11"> </text>
+		<text transform="matrix(1 0 0 1 806.7751 230)" class="st5 st6 st12">LÊ XUÂN ĐĂNG</text>
+		
+			<image style="overflow:visible;enable-background:new    ;" width="155" height="40" xlink:href="images/btThoat.png"  transform="matrix(1 0 0 1 757.5 669.666)">
+		</image>
+		<rect id="btThoatBangXepHang_event" x="757.5" y="666.8" class="st13" width="155" height="45.3"/>
+	</g>
+</g>
+</svg>

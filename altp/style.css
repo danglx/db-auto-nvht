@@ -1,0 +1,93 @@
+html {
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	overflow:hidden;
+	
+}
+
+svg {
+	overflow: hidden;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	-webkit-touch-callout: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.tbQuestion text {
+	fill:#FDEC75;
+	font-family:Arial;
+	font-size: 20px;
+}
+
+.ip {
+    position: absolute;
+    border: 0;
+    outline: none;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: lighter;
+    font-stretch: normal;
+    line-height: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: rgba(255, 255, 255, 0);
+	/* background-color:red; */
+	pointer-events:auto;
+	overflow-y:auto;
+}
+
+.svginside {
+	position:relative;
+}
+
+#divcauhoi_div , #divtraloi_div{
+	font-family: Arial;
+	font-weight: normal;
+	color:#FDEC75;
+}
+
+#divcauhoi_div img,
+#divtraloi_div img,
+#traloidung_giaithich,
+#traloisai_giaithich {
+    background: #fff;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.9); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}

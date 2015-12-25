@@ -1,0 +1,7 @@
+﻿function consult(){
+	
+}
+
+consult.prototype = {
+	
+}

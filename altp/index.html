@@ -1,0 +1,671 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Triệu phú trắc nghiệm</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libs/jquery-1.11.1.js"></script>
+    <script src="libs/interact-1.2.3.min.js"></script>
+    <script src="libs/base64.js"></script>
+    <script src="libs/d3.min.js"></script>
+    <script src="libs/svgtypewriter.js"></script>
+    <script type="text/javascript" src="libs/preloadjs-NEXT.min.js"></script>
+    <script type="text/javascript" src="libs/soundjs-NEXT.min.js"></script>
+    <script type="text/javascript" src="libs/easeljs-0.7.0.min.js"></script>
+</head>
+
+<body id="bodyID" style="-ms-touch-action: none;">
+    <svg id="svg" class="content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+        <rect id="divtrogiup" opacity="0.0001" class="svginput" x="300" y="157" fill="#FFFFFF" stroke="#010101" stroke-miterlimit="10" width="665.8" height="376" />
+        <rect id="divcauhoi" opacity="0.0001" class="svginput" x="97.1" y="180.1" fill="#FCEB76" width="822.5" height="179.9" />
+        <rect id="divtraloi" opacity="0.0001" class="svginput" x="93.1" y="230" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" width="832.5" height="100" />
+        <rect id="divbangxephang" opacity="0.0001" x="304.8" y="261.7" fill="#FFFFFF" width="662.3" height="247.8" />
+		<rect id="divbangxephang2" opacity="0.0001" x="102.5" y="306.5" fill="#FFFFFF" width="797.5" height="298"/>
+        <g id="loading">
+            <image overflow="visible" width="1280" height="720" xlink:href="images/loading1.png">
+            </image>
+            <defs>
+                <clipPath id="progressbar">
+                    <rect id="progressbar_mask" x="-309" y="579" fill="#FFF200" width="660" height="40" />
+                </clipPath>
+            </defs>
+            <g clip-path="url(#progressbar)">
+                <g>
+                    <path fill="#FFF200" d="M956.667,598.226c0,9.08-6.304,16.441-14.082,16.441H343.082c-7.777,0-14.082-7.361-14.082-16.441v-0.784
+						c0-9.08,6.305-16.441,14.082-16.441h599.503c7.778,0,14.082,7.361,14.082,16.441V598.226z" />
+                </g>
+                <defs>
+                    <filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="329" y="581" width="627.667" height="33.667">
+                        <feColorMatrix type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source" />
+                    </filter>
+                </defs>
+                <mask maskUnits="userSpaceOnUse" x="329" y="581" width="627.667" height="33.667" id="SVGID_1_43777118">
+                    <g filter="url(#Adobe_OpacityMaskFilter)">
+                        <image overflow="visible" width="2632" height="157" xlink:href="images/66C1FB8.jpg" transform="matrix(0.24 0 0 0.24 327 579)">
+                        </image>
+                    </g>
+                </mask>
+                <g opacity="0.75" mask="url(#SVGID_1_43777118)">
+                    <path fill="#FFFFFF" d="M956.667,598.226c0,9.08-6.304,16.441-14.082,16.441H343.082c-7.777,0-14.082-7.361-14.082-16.441v-0.784
+						c0-9.08,6.305-16.441,14.082-16.441h599.503c7.778,0,14.082,7.361,14.082,16.441V598.226z" />
+                </g>
+            </g>
+
+        </g>
+        <g id="introduction" display="none">
+            <image overflow="visible" enable-background="new    " width="1280" height="720" xlink:href="images/introbackground.png" transform="matrix(1 0 0 1 1 0)">
+            </image>
+            <g id="intro1">
+                <image overflow="visible" enable-background="new    " width="415" height="415" xlink:href="images/logo.png" transform="matrix(1 0 0 1 144 139)">
+                </image>
+
+                <image overflow="visible" enable-background="new    " width="513" height="415" xlink:href="images/introbutton.png" transform="matrix(1 0 0 1 640 142)">
+                </image>
+
+                <rect id="btIntroHuongDanLamBai_event" x="640" y="139" opacity="0.001" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" enable-background="new    " width="513" height="91.5" />
+
+                <rect id="btBatDauLamBai_event" x="639.5" y="250" opacity="0.001" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" enable-background="new    " width="513" height="91.5" />
+
+                <rect id="btBangXepHang_event" x="638" y="357.75" opacity="0.001" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" enable-background="new    " width="513" height="91.5" />
+
+                <rect id="btThoat_event" x="640" y="465.5" opacity="0.001" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" enable-background="new    " width="513" height="91.5" />
+            </g>
+            <g id="bangxephang" display="none">
+                <path id="XMLID_86_" opacity="0.65" fill="#010101" stroke="#1D4776" stroke-width="3" stroke-miterlimit="10" enable-background="new    " d="
+				M301.4,131.2h664.4c13.8,0,24.9,11.1,24.9,24.9v399.1c0,13.8-11.1,24.9-24.9,24.9H301.4c-13.8,0-24.9-11.1-24.9-24.9V156.1
+				C276.5,142.3,287.6,131.2,301.4,131.2z" />
+
+                
+				<g id="groupxephang">
+				<rect id="XMLID_85_" x="297.3" y="181.9" opacity="0.5" fill="#2B59A8" enable-background="new    " width="679.3" height="37.4" />
+				<text  transform="matrix(1 0 0 1 506.9561 167.356)" fill="#FFFFFF" font-family="'Arial'" font-weight="bold" font-size="18.2926px">HỌ VÀ TÊN:</text>
+				<text id="bangxephang_hovaten" transform="matrix(1 0 0 1 615 167.356)" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="18.2926px">LÊ XUÂN ĐĂNG</text>
+
+                <text id="XMLID_84_" transform="matrix(1 0 0 1 320.4971 207.2661)" fill="#FFFFFF" font-family="'Arial'" font-size="16.6296px">Hạng:</text>
+
+                <text id="bangxephang_xephang" transform="matrix(1 0 0 1 369.4932 207.2661)" fill="#FCEB76" font-family="'Arial'" font-size="16.6296px">25</text>
+
+                <text id="XMLID_82_" transform="matrix(1 0 0 1 581.6543 207.2661)" fill="#FFFFFF" font-family="'Arial'" font-size="16.6296px">Lớp:</text>
+
+                <text id="bangxephang_lop" transform="matrix(1 0 0 1 620.2969 207.2661)" fill="#FCEB76" font-family="'Arial'" font-size="16.6296px">QTH10</text>
+
+                <text id="XMLID_80_" transform="matrix(1 0 0 1 747.6709 207.2661)" fill="#FFFFFF" font-family="'Arial'" font-size="16.6296px">Tổng LTTNCoint:</text>
+
+                <text id="bangxephang_tongdiem" transform="matrix(1 0 0 1 881.2871 207.2661)" fill="#FCEB76" font-family="'Arial'" font-size="16.6296px">1.000.000</text>
+
+                <text id="XMLID_78_" transform="matrix(1 0 0 1 551.0127 253.4135)" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="13.3037px">BẢNG XẾP HẠNG TOP 10</text>
+				</g>
+
+				<image width="211" height="274" xlink:href="images/quaylaibatdau.png" transform="matrix(1 0 0 1 1071 280.186)">
+				</image>
+				<image  width="227" height="415"  xlink:href="images/logo2.png" transform="matrix(1.0819 0 0 1.0819 1 131.1861)">
+				</image>
+               
+                <rect id="btIntroQuayLai_event" x="1070" y="278" display="inline" opacity="0.001" enable-background="new    " width="211" height="129.5" />
+
+                <!-- 
+                Disable nut bat dau tai giao dien Bang xep hang va Intro
+                <rect id="btIntroBatDau_event" x="1071" y="424.5" display="inline" opacity="0.001" enable-background="new    " width="211" height="129.5" /> -->
+            </g>
+        </g>
+        <g id="playgame" display="none">
+            <image overflow="visible" width="1280" height="720" xlink:href="images/gamebackground.png" transform="matrix(1 0 0 1 1 0)">
+            </image>
+            <g id="dongho">
+                <image overflow="visible" width="64" height="64" xlink:href="images/dongho.png" transform="matrix(1 0 0 1 920 15)">
+                </image>
+            </g>
+            <g id="groupAnswer">
+                <g id="answer1">
+                    <polygon fill="none" stroke="#404153" stroke-width="3" stroke-miterlimit="10" points="81.125,492.333 109.625,516.375 
+		911.75,516.375 934.833,493.25 911.625,470.25 109.875,470.125 	" />
+                    <line fill="none" stroke="#00BFFD" stroke-width="4" stroke-miterlimit="10" x1="81.125" y1="492.333" x2="0" y2="492.333" />
+                    <line fill="none" stroke="#00BFFD" stroke-width="4" stroke-miterlimit="10" x1="934.833" y1="493.25" x2="999.166" y2="493.25" />
+                </g>
+                <g id="answer2">
+                    <polygon fill="none" stroke="#404153" stroke-width="3" stroke-miterlimit="10" points="81.125,549.125 109.625,573.167 
+		911.75,573.167 934.833,550.042 911.625,527.042 109.875,526.917 	" />
+                    <line fill="none" stroke="#00BFFD" stroke-width="4" stroke-miterlimit="10" x1="81.125" y1="549.125" x2="0" y2="549.125" />
+
+                    <line fill="none" stroke="#00BFFD" stroke-width="4" stroke-miterlimit="10" x1="934.833" y1="550.042" x2="999.166" y2="550.042" />
+                </g>
+                <g id="answer3">
+                    <polygon fill="none" stroke="#404153" stroke-width="3" stroke-miterlimit="10" points="80.792,605.791 109.292,629.833 
+		911.416,629.833 934.5,606.708 911.291,583.708 109.542,583.583 	" />
+                    <line fill="none" stroke="#00BFFD" stroke-width="4" stroke-miterlimit="10" x1="80.792" y1="605.791" x2="-0.333" y2="605.791" />
+                    <line fill="none" stroke="#00BFFD" stroke-width="4" stroke-miterlimit="10" x1="934.5" y1="606.708" x2="998.832" y2="606.708" />
+                </g>
+                <g id="answer4">
+                    <polygon fill="none" stroke="#404153" stroke-width="3" stroke-miterlimit="10" points="80.792,661.789 109.292,685.831 
+		911.416,685.831 934.5,662.706 911.291,639.706 109.542,639.581 	" />
+                    <line fill="none" stroke="#00BFFD" stroke-width="4" stroke-miterlimit="10" x1="80.792" y1="661.789" x2="-0.333" y2="661.789" />
+                    <line fill="none" stroke="#00BFFD" stroke-width="4" stroke-miterlimit="10" x1="934.5" y1="662.706" x2="998.832" y2="662.706" />
+                </g>
+                <path id="borderQuestion" opacity="0.5" stroke="#414167" stroke-width="5" stroke-miterlimit="10" d="M935.497,354.524    c0,8.27-7.885,14.975-17.61,14.975H100.735c-9.726,0-17.61-6.705-17.61-14.975V183.809c0-8.271,7.884-14.975,17.61-14.975h817.152    c9.728,0,17.61,6.705,17.61,14.975V354.524L935.497,354.524z" />
+                <g id="groupButtonAnswer">
+                    <g id="ans1">
+                        <polygon id="answer1_hover" class="buttonAnswer" display="none" opacity="0.5" fill="#878787" points="80.792,492.333 109.292,516.375 911.417,516.375 934.5,493.25 911.292,470.25 
+					109.542,470.125 	" />
+                        <text transform="matrix(1 0 0 1 110.1655 501.833)" fill="#FDEC75" font-family="'Arial'" font-size="24">A:</text>
+                        <text id="tbAnswer1" transform="matrix(1 0 0 1 150 501.499)" fill="#FDEC75" font-family="'Arial'" font-size="20"></text>
+                        <polygon id="answer1_event" opacity="0.001" points="80.792,492.333 109.292,516.375 911.417,516.375 934.5,493.25 911.292,470.25 
+					109.542,470.125 	" />
+                    </g>
+                    <g id="ans2">
+
+                        <polygon id="answer2_hover" class="buttonAnswer" display="none" opacity="0.5" fill="#878787" points="82.457,549.125 110.957,573.167 913.082,573.167 936.165,550.042 912.957,527.042 
+					111.207,526.917 	" />
+                        <text transform="matrix(1 0 0 1 110.1655 557.833)" fill="#FDEC75" font-family="'Arial'" font-size="24">B:</text>
+                        <text id="tbAnswer2" transform="matrix(1 0 0 1 150 557.833)" fill="#FDEC75" font-family="'Arial'" font-size="20"></text>
+                        <polygon id="answer2_event" opacity="0.001" points="82.457,549.125 110.957,573.167 913.082,573.167 936.165,550.042 912.957,527.042 
+					111.207,526.917 	" />
+                    </g>
+                    <g id="ans3">
+
+                        <polygon id="answer3_hover" class="buttonAnswer" display="none" opacity="0.5" fill="#878787" points="81.125,605.874 109.625,629.916 911.749,629.916 934.833,606.791 911.624,583.791 
+		109.875,583.666 	" />
+                        <text transform="matrix(1 0 0 1 110.1655 614.833)" fill="#FDEC75" font-family="'Arial'" font-size="24">C:</text>
+                        <text id="tbAnswer3" transform="matrix(1 0 0 1 150 612.5)" fill="#FDEC75" font-family="'Arial'" font-size="20"></text>
+                        <polygon id="answer3_event" opacity="0.001" points="81.125,605.874 109.625,629.916 911.749,629.916 934.833,606.791 911.624,583.791 
+		109.875,583.666 	" />
+                    </g>
+                    <g id="ans4">
+
+                        <polygon id="answer4_hover" class="buttonAnswer" display="none" opacity="0.5" fill="#878787" points="80.792,661.872 109.292,685.914 911.416,685.914 934.5,662.789 911.291,639.789 
+		109.542,639.664 	" />
+                        <text transform="matrix(1 0 0 1 110.1655 669.833)" fill="#FDEC75" font-family="'Arial'" font-size="24">D:</text>
+                        <text id="tbAnswer4" transform="matrix(1 0 0 1 150 672.5)" fill="#FDEC75" font-family="'Arial'" font-size="20"></text>
+                        <polygon id="answer4_event" opacity="0.001" points="80.792,661.872 109.292,685.914 911.416,685.914 934.5,662.789 911.291,639.789 
+		109.542,639.664 	" />
+                    </g>
+                </g>
+                <image overflow="visible" width="148" height="65" xlink:href="images/btDungLai.png" transform="matrix(1 0 0 1 84 390)">
+                </image>
+                <image overflow="visible" width="181" height="65" xlink:href="images/btTraLoi.png" transform="matrix(1 0 0 1 751.5 390)"></image>
+                <g id="tbQuestion" transform="matrix(1 0 0 1 110 180)" class="tbQuestion"></g>
+                <!-- <text id="tbQuestion" transform="matrix(1 0 0 1 110 180)" fill="#FDEC75" font-family="'Arial'" font-size="20"></text> -->
+                <textArea font-size="25" font-family="Georgia" x="10" y="10" width="200" height="300">Tomorrow, and tomorrow, and tomorrow; creeps in this petty pace from day to day, until the last syll&#xAD;able of recorded time. And all our yesterdays have lighted fools the way to dusty death.</textArea>
+                <!-- matrix(1 0 0 1 340.6523 401)" -->
+                <path opacity="0.5" fill="#FFFFFF" d="M 919, 423 L914, 423 A20, 20, 0 ,1, 1 ,913.9999996953826, 422.99650934151373 L 918.9999996192282, 422.99563667689216 A25, 25, 0 ,1, 0 ,919, 423 z"></path>
+                <text id="traloi_countDown" transform="matrix(1 0 0 1 893 431)" text-anchor="middle" fill="#FFFFFF" font-family="'Arial'" font-size="24">10</text>
+                <path id="traloi_circle" opacity="0.5" fill="#FFFFFF" />
+                <rect id="btDungLai_event" opacity="0.001" x="79.792" y="390" width="151.208" height="65" />
+                <rect id="btTraloi_event" opacity="0.001" x="751.5" y="390" width="184.605" height="65" />
+            </g>
+            <text id="tbTime" display="none" transform="matrix(1 0 0 1 83.125 67.3335)" fill="#FFFFFF" font-family="'Arial'" font-size="50">30</text>
+            <text id="star" display="none" transform="matrix(1 0 0 1 865.334 64.0005)" fill="#FFFFFF" font-family="'Arial'" font-size="50">00</text>
+            <g id="traloidung" class="traloi app" display="none">
+                <path opacity="0.91" fill="#001A66" stroke="#FFF600" stroke-width="3" stroke-miterlimit="10" enable-background="new    " d="
+		M111,153.499h795c16.568,0,30,13.432,30,30v226c0,16.568-13.432,30-30,30H111c-16.568,0-30-13.432-30-30v-226
+		C81,166.931,94.432,153.499,111,153.499z" />
+                <text transform="matrix(1 0 0 1 294.6743 198.334)" fill="#FDEC75" font-family="'Arial'" font-size="22">XIN CHÚC MỪNG BẠN ĐÃ TRẢ LỜI ĐÚNG!</text>
+                <text transform="matrix(1 0 0 1 342.604 228.334)" fill="#FFFFFF" font-family="'Arial'" font-size="20">Đáp án của chương trình đưa ra là: </text>
+
+
+
+                <text id="traloidung_dapan" transform="matrix(1 0 0 1 670.501 229)" fill="#FFFFFF" font-family="'Arial'" font-size="20"></text>
+                <text id="traloidung_giaithich" transform="matrix(1 0 0 1 487.8345 259.168)"></text>
+                <image overflow="visible" width="201" height="50" id="btTiepTuc" xlink:href="images/btTiepTuc.png" transform="matrix(1 0 0 1 405.479 369)">
+                </image>
+                <text id="traloidung_countDown" transform="matrix(1 0 0 1 581 402)" text-anchor="middle" fill="#FFFFFF" font-family="'Arial'" font-size="24">10</text>
+                <path fill="#FFFFFF" opacity="0.5" d="M 605, 394 L600, 394 A18, 18, 0 ,1, 1 ,599.9999997258443, 393.99685840736237 L 604.9999996496899, 393.9959857427408 A23, 23, 0 ,1, 0 ,605, 394 z"></path>
+                <path id="traloidung_circle" opacity="0.5" fill="#FFFFFF" />
+                <rect id="btTiepTuc_event" opacity="0.001" x="405.479" y="369" fill-rule="evenodd" clip-rule="evenodd" fill="#FDEC75" width="201" height="50" />
+            </g>
+            <g id="traloisai" class="traloi app" display="none">
+                <path display="inline" opacity="0.91" fill-rule="evenodd" clip-rule="evenodd" fill="#001A66" stroke="#FE6029" stroke-width="3" stroke-miterlimit="10" d="
+		M110.146,154h795c16.568,0,30,13.432,30,30v226c0,16.568-13.432,30-30,30h-795c-16.568,0-30-13.432-30-30V184
+		C80.146,167.432,93.578,154,110.146,154z" />
+                <text transform="matrix(1 0 0 1 500 191.5)" text-anchor="middle" display="inline">
+                    <tspan x="0" y="0" fill="#FDEC75" font-family="'Arial'" font-size="22">RẤT TIẾC! BẠN ĐÃ CHỌN SAI ĐÁP ÁN</tspan>
+                    <tspan x="0" y="30" fill="#FFFFFF" font-family="'Arial'" font-size="20">Đáp án của chương trình đưa ra là:</tspan>
+                </text>
+                <text id="traloisai_giaithich" transform="matrix(1 0 0 1 500 230.168)"></text>
+
+                <image display="inline" overflow="visible" width="201" height="50" id="btHenGapLai" xlink:href="images/btHenGapLai.png" transform="matrix(1 0 0 1 417 367)">
+                </image>
+                <rect id="btHenGapLai_event" opacity="0.001" x="417" y="363" fill-rule="evenodd" clip-rule="evenodd" fill="#FDEC75" width="201" height="51.5" />
+                <text id="traloisai_dapan" transform="matrix(1 0 0 1 665 221.5)" fill="#FFFFFF" display="inline" font-family="'Arial'" font-size="20">A</text>
+            </g>
+            <g id="popup" display="none">
+                <path opacity="0.91" fill-rule="evenodd" clip-rule="evenodd" fill="#001A66" stroke="#FFF600" stroke-opacity="0.3" stroke-width="3" stroke-miterlimit="10" d="
+        M110.146,153.499h795c16.568,0,30,13.432,30,30v226c0,16.568-13.432,30-30,30h-795c-16.568,0-30-13.432-30-30v-226
+        C80.146,166.931,93.578,153.499,110.146,153.499z" />
+                <text transform="matrix(1 0 0 1 500 240.499)" display="inline">
+                    <tspan id="popup_text" x="0" y="0" fill="#FDEC75" font-family="'Arial'" text-anchor="middle" font-size="22"></tspan>
+                </text>
+                <image display="inline" overflow="visible" width="201" height="50" id="btPopupCancel" xlink:href="images/btThoat.png" transform="matrix(1 0 0 1 396 354)"></image>
+                <rect id="btPopup_event" opacity="0.001" x="392.5" y="354" display="inline" fill-rule="evenodd" clip-rule="evenodd" fill="#FDEC75" width="206.5" height="50" />
+            </g>
+            <g id="SanSang" display="none">
+                <path opacity="0.91" fill-rule="evenodd" clip-rule="evenodd" fill="#001A66" stroke="#FFF600" stroke-opacity="0.3" stroke-width="3" stroke-miterlimit="10" d="
+		M110.146,153.499h795c16.568,0,30,13.432,30,30v226c0,16.568-13.432,30-30,30h-795c-16.568,0-30-13.432-30-30v-226
+		C80.146,166.931,93.578,153.499,110.146,153.499z" />
+                <text transform="matrix(1 0 0 1 500 240.499)" display="inline">
+                    <tspan x="0" y="0" fill="#FDEC75" font-family="'Arial'" text-anchor="middle" font-size="22">BẠN ĐÃ SẴN SÀNG TRẢ LỜI CÁC CÂU HỎI</tspan>
+                    <tspan x="0" y="30" fill="#FDEC75" font-family="'Arial'" text-anchor="middle" font-size="22">CỦA CHƯƠNG TRÌNH LUYỆN TẬP TRẮC NGHIỆM</tspan>
+                    <tspan x="0" y="60" fill="#FDEC75" font-family="'Arial'" text-anchor="middle" font-size="22">AI LÀ TRIỆU PHÚ CHƯA?</tspan>
+                </text>
+                <image display="inline" overflow="visible" width="201" height="50" id="btSanSang" xlink:href="images/btSanSang.png" transform="matrix(1 0 0 1 396 354)"></image>
+                <rect id="btSanSang_event" opacity="0.001" x="392.5" y="354" display="inline" fill-rule="evenodd" clip-rule="evenodd" fill="#FDEC75" width="206.5" height="50" />
+            </g>
+            <tspan id="diemclone" display="none" x="0" y="0" fill="#FDEC75" font-family="'Arial'" font-weight="bold" font-size="24">15 - 20.000.000</tspan>
+            <text id="groupdiem" transform="matrix(1 0 0 1 1058 110)" style="white-space: pre" font-weight="bold">
+
+            </text>
+            <path fill-opacity="0.55" fill="#2F395B" stroke="#002A6A" stroke-width="3" stroke-miterlimit="10" d="M1267.5,691.5
+				c0,7.732-6.268,14-14,14h-217c-7.732,0-14-6.268-14-14v-11c0-7.732,6.268-14,14-14h217c7.732,0,14,6.268,14,14V691.5z" />
+            <text transform="matrix(1 0 0 1 1038.0664 695.5)">
+                <tspan id="currentPoint" x="0" y="0" fill="#FFFFFF" font-family="'Arial'" font-weight="bold" font-size="26">0 </tspan>
+                <tspan x="132.891" y="0" fill="#FDEC75" font-family="'Arial'" font-weight="bold" font-size="18">LTTNCoint</tspan>
+            </text>
+            <g id="glowclone" display="none" class="glow">
+                <image overflow="visible" width="269" height="63" id="level15" xlink:href="images/glow.png" transform="matrix(1 0 0 1 1005 70)">
+                </image>
+            </g>
+            <g id="glowGroup">
+
+            </g>
+            <g id="dungchoi" display="none" class="app">
+                <path opacity="0.91" fill="#001A66" stroke="#FFF600" stroke-width="3" stroke-miterlimit="10" enable-background="new    " d="
+					M110.479,153.167h795c16.568,0,30,13.432,30,30v226c0,16.568-13.432,30-30,30h-795c-16.568,0-30-13.432-30-30v-226
+					C80.479,166.599,93.91,153.167,110.479,153.167z" />
+                <text transform="matrix(1 0 0 1 224.2622 191)">
+                    <tspan x="0" y="0" fill="#FDEC75" font-family="'Arial'" font-weight="bold" font-size="22">BẠN QUYẾT ĐỊNH DỪNG LẠI ĐỂ BẢO TOÀN KẾT QUẢ</tspan>
+                    <tspan x="110.65" y="30" fill="#FFFFFF" font-family="'Arial'" font-weight="bold" font-size="22">Số điểm hiện tại bạn đạt được là:</tspan>
+                    <tspan x="168.636" y="156" fill="#FFFFFF" font-family="'Arial'" font-weight="bold" font-size="22">Chúc bạn thành công!</tspan>
+                </text>
+                <text id="dungchoi_money" transform="matrix(1 0 0 1 512.3633 286)" fill="#FFFFFF" text-anchor="middle" font-family="'Arial'" font-weight="bold" font-size="40">0 LTTNCoint</text>
+
+                <image overflow="visible" width="201" height="50" xlink:href="images/btHenGapLai.png" transform="matrix(1 0 0 1 406 370)">
+                </image>
+                <rect id="btNhanSao_event" opacity="0.0001" x="406" y="370" fill="#FFFFFF" width="201" height="50" />
+            </g>
+
+
+            <image overflow="visible" width="55" height="55" display="none" id="help1" xlink:href="images/usedIcon.png" transform="matrix(1 0 0 1 1022.667 19.667)">
+            </image>
+            <image overflow="visible" width="55" height="55" id="help4" display="none" xlink:href="images/usedIcon.png" transform="matrix(1 0 0 1 1220.334 20.667)">
+            </image>
+            <image overflow="visible" width="55" height="55" id="help2" display="none" xlink:href="images/usedIcon.png" transform="matrix(1 0 0 1 1089 20.667)">
+            </image>
+            <image overflow="visible" width="55" height="55" id="help3" display="none" xlink:href="images/usedIcon.png" transform="matrix(1 0 0 1 1154 20)">
+            </image>
+
+            <rect id="btHelp1_event" class="btHelp" display="none" x="1018.5" y="17.667" opacity="0.001" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="63.167" height="60.833" />
+            <rect id="btHelp2_event" class="btHelp" display="none" x="1082.667" y="17.75" opacity="0.001" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="63.167" height="60.833" />
+            <rect id="btHelp3_event" class="btHelp" display="none" x="1147.834" y="17.75" opacity="0.001" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="63.167" height="60.833" />
+            <rect id="btHelp4_event" class="btHelp" display="none" x="1212.001" y="17.75" opacity="0.001" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="63.167" height="60.833" />
+
+            <g id="chucmung" display="none" class="app">
+                <path opacity="0.91" fill-rule="evenodd" clip-rule="evenodd" fill="#001A66" stroke="#FFF600" stroke-width="3" stroke-miterlimit="10" d="
+					M109.811,154h795c16.568,0,30,13.432,30,30v226c0,16.568-13.432,30-30,30h-795c-16.568,0-30-13.432-30-30V184
+					C79.811,167.432,93.242,154,109.811,154z" />
+                <text transform="matrix(1 0 0 1 408.3237 203)">
+                    <tspan x="0" y="0" fill="#FDEC75" font-family="'Arial'" font-weight="bold" font-size="22">XIN CHÚC MỪNG!</tspan>
+                    <tspan id="chucmung_level" x="-51.603" y="30" fill="#FDEC75" font-family="'Arial'" font-weight="bold" font-size="20">BẠN ĐÃ VƯỢT QUA CÂU SỐ</tspan>
+                    <tspan x="-41.378" y="60" fill="#FDEC75" font-family="'Arial'" font-weight="bold" font-size="20">số điểm chắc chắn đạt được</tspan>
+                </text>
+                <text id="chucmung_money" transform="matrix(1 0 0 1 500 325)" fill="#FFFFFF" font-family="'Arial'" text-anchor="middle" font-weight="bold" font-size="40">1.000.000 LTTNCoint</text>
+
+                <image overflow="visible" width="201" height="50" id="btTiepTucChucMung" xlink:href="images/btTiepTuc.png" transform="matrix(1 0 0 1 405.479 369)">
+                </image>
+                <rect id="btTiepTucChucMung_event" opacity="0.001" x="405.479" y="369" fill-rule="evenodd" clip-rule="evenodd" fill="#FDEC75" width="201" height="50" />
+            </g>
+
+            <g id="chucmung2" display="none" class="app">
+                <path opacity="0.91" fill-rule="evenodd" clip-rule="evenodd" fill="#001A66" stroke="#FFF600" stroke-width="3" stroke-miterlimit="10" d="
+					M109.811,154h795c16.568,0,30,13.432,30,30v226c0,16.568-13.432,30-30,30h-795c-16.568,0-30-13.432-30-30V184
+					C79.811,167.432,93.242,154,109.811,154z" />
+                <text transform="matrix(1 0 0 1 413.3237 206)">
+                    <tspan x="0" y="0" fill="#FDEC75" font-family="'Arial'" font-weight="bold" font-size="22">XIN CHÚC MỪNG!</tspan>
+                    <tspan x="-231.75" y="30" fill="#FDEC75" font-family="'Arial'" font-weight="bold" font-size="20">BẠN ĐÃ XUẤT SẮC VƯỢT QUA CÁC CÂU HỎI CỦA CHƯƠNG TRÌNH</tspan>
+                    <tspan x="-6.447" y="60" fill="#FDEC75" font-family="'Arial'" font-weight="bold" font-size="20">Đạt điểm số tuyệt đối</tspan>
+                </text>
+                <text id="lbMaxPoint" transform="matrix(1 0 0 1 500 327)" fill="#FFFFFF" text-anchor="middle" font-family="'Arial'" font-weight="bold" font-size="50">20.000.000 LTTNCoint</text>
+
+                <image overflow="visible" width="201" height="50" xlink:href="images/btOK.png" transform="matrix(1 0 0 1 409 360)">
+                </image>
+                <rect id="btOK_event" x="409" y="360" opacity="0.0001" fill="#FFFFFF" width="201" height="50" />
+            </g>
+
+            <g id="groupbangxephang" display="none" class="app">
+                <path id="XMLID_112_" opacity="0.85" fill="#0A1534" stroke="#FAED26" stroke-width="3" stroke-miterlimit="10" enable-background="new    " d="
+					M98.5,149.5h799c16.6,0,30,13.4,30,30v480c0,16.6-13.4,30-30,30h-799c-16.6,0-30-13.4-30-30v-480C68.5,162.9,81.9,149.5,98.5,149.5
+					z"/>
+				<rect id="XMLID_111_" x="93.5" y="210.5" opacity="0.5" fill="#2B59A8" enable-background="new    " width="817" height="45"/>
+				<text  transform="matrix(1 0 0 1 345.6631 193)" fill="#FFFFFF" font-family="'Arial'" font-weight="bold" font-size="22px">HỌ VÀ TÊN:</text>
+				<text  id="groupbangxephang_hovaten" transform="matrix(1 0 0 1 475 193)" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="22px"></text>
+				<text id="XMLID_109_" transform="matrix(1 0 0 1 121.4141 241)" fill="#FFFFFF" font-family="'Arial'" font-size="20px">Hạng: </text>
+				<text id="XMLID_107_" transform="matrix(1 0 0 1 180.3401 241)" fill="#FCEB76" font-family="'Arial'" font-size="20px">25</text>
+				<text id="XMLID_103_" transform="matrix(1 0 0 1 346.5313 241)" fill="#FFFFFF" font-family="'Arial'" font-size="20px">Lớp: </text>
+				<text id="XMLID_101_" transform="matrix(1 0 0 1 393.0063 241)" fill="#FCEB76" font-family="'Arial'" font-size="20px">QTH10</text>
+				<text id="XMLID_97_" transform="matrix(1 0 0 1 619.1631 241)" fill="#FFFFFF" font-family="'Arial'" font-size="20px">Tổng LTTNCoint: </text>
+				<text id="groupbangxephang_point" transform="matrix(1 0 0 1 769.8621 241)" fill="#FCEB76" font-family="'Arial'" font-size="20px">1.000.000</text>
+				<path id="XMLID_92_" opacity="0.2" fill="#2B59A8" enable-background="new    " d="M910,613c0,1.1-0.9,2-2,2H98.5c-1.1,0-2-0.9-2-2
+					V278.5c0-1.1,0.9-2,2-2H908c1.1,0,2,0.9,2,2V613z"/>
+				<text id="XMLID_91_" transform="matrix(1 0 0 1 398.6484 296.5)" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="16px">BẢNG XẾP HẠNG TOP 10</text>
+					<image overflow="visible" enable-background="new    " width="155" height="40" id="XMLID_3_" xlink:href="images/btThoat.png"  transform="matrix(1 0 0 1 423.5 632.666)">
+				</image>
+				
+				<rect id="btThoatBangXepHang_event" x="423.5" y="629.8" opacity="1.000000e-004" fill="#FFFFFF" enable-background="new    " width="155" height="45.3"/>
+            </g>
+            
+        </g>
+
+		<g id="groupsound" display="none">
+                <path id="slidersound" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M83.125,14.684c0.958,0,1.735,0.777,1.735,1.735
+					v10.412c0,0.958-0.777,1.735-1.735,1.735s-1.735-0.777-1.735-1.735V16.419C81.39,15.46,82.167,14.684,83.125,14.684z" />
+                <path id="mute" display="none" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M17.171,26.925l11.5-11.468
+					c0.414-0.413,1.084-0.412,1.498,0.002c0.413,0.414,0.412,1.084-0.002,1.498l-11.5,11.468c-0.415,0.413-1.085,0.412-1.498-0.002
+					C16.756,28.008,16.757,27.338,17.171,26.925z" />
+                <rect id="sound_event" opacity="0.0001" x="9" y="10.25" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="24.25" height="22.75" />
+                <rect id="slidersound_event" opacity="0.0001" x="74.75" y="11" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="12.25" height="21" />
+        </g>
+    </svg>
+    <div id="divInput" class="content" style="position:absolute;pointer-events:none">
+        <div id="divtrogiup_div" style="display:none" container="divtrogiup" class="ip mydiv">
+            <svg id="divtrogiup_svg" class="svginside" style="height:740px" viewBox="0 0 624 740">
+                <circle id="XMLID_46_" fill="#252768" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="86.2" cy="181.5" r="28.3" />
+                <circle id="XMLID_45_" fill="#252768" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="234.5" cy="180.5" r="28.3" />
+                <circle id="XMLID_44_" fill="#252768" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="384.2" cy="180.5" r="28.3" />
+                <circle id="XMLID_43_" fill="#252768" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="528.2" cy="181.5" r="28.3" />
+                <image overflow="visible" enable-background="new    " width="84" height="92" id="XMLID_35_" xlink:href="images/tuvantaichoIcon.png" transform="matrix(0.5263 0 0 0.5263 61.833 161.4185)">
+                </image>
+                <image overflow="visible" enable-background="new    " width="95" height="87" id="XMLID_27_" xlink:href="images/ykienkhangiaIcon.png" transform="matrix(0.4985 0 0 0.4985 211.4756 159.5845)">
+                </image>
+                <image overflow="visible" enable-background="new    " width="87" height="81" id="XMLID_19_" xlink:href="images/50_50icon.png" transform="matrix(0.4249 0 0 0.4249 365.5303 164.1152)">
+                </image>
+                <image overflow="visible" enable-background="new    " width="86" height="86" id="XMLID_11_" xlink:href="images/goidienthoaiicon.png" transform="matrix(0.4512 0 0 0.4512 508.666 163.0991)">
+                </image>
+                <text id="XMLID_10_" transform="matrix(1 0 0 1 56.1436 244.666)" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="18px">Tư vấn</text>
+                <text id="XMLID_9_" transform="matrix(1 0 0 1 116.1904 244.666)" fill="#010101" font-family="'Arial'" font-size="12px"> </text>
+                <text id="XMLID_8_" transform="matrix(1 0 0 1 57.1636 266.266)" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="18px">tại chỗ</text>
+                <text id="XMLID_7_" transform="matrix(1 0 0 1 193.9873 245.666)" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="18px">Hỏi ý kiến </text>
+                <text id="XMLID_6_" transform="matrix(1 0 0 1 202.4903 267.266)" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="18px">khán giả</text>
+                <text id="XMLID_5_" transform="matrix(1 0 0 1 361.4922 245.666)" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="18px">50/50</text>
+                <text id="XMLID_4_" transform="matrix(1 0 0 1 489.666 247.5)" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="18px">Gọi điện </text>
+                <text id="XMLID_3_" transform="matrix(1 0 0 1 461.7571 269.1)" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="18px">cho người thân</text>
+                <text id="XMLID_47_" transform="matrix(1 0 0 1 5 21.5)">
+                    <tspan x="0" y="0" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="18px">01 </tspan>
+                    <tspan x="25" y="0" fill="#FFFFFF" font-family="'Arial'" font-size="18px">- Khi tham gia luyên tập trắc nghiệm bạn sẽ phải vượt qua các câu hỏi</tspan>
+                    <tspan x="0" y="21.6" fill="#FFFFFF" font-family="'Arial'" font-size="18px">trong đó có 3 mốc quan trọng, vượt qua mốc bạn sẽ chắc chắn có được số </tspan>
+                    <tspan x="0" y="43.2" fill="#FFFFFF" font-family="'Arial'" font-size="18px">điểm tương ứng</tspan>
+                    <tspan x="0" y="64.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px"> </tspan>
+                    <tspan x="0" y="100.8" fill="#FCEB76" font-family="'Arial'" font-size="18px">02</tspan>
+                    <tspan x="20" y="100.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px"> - Trong lúc chơi sẽ có 4 sự trợ giúp:</tspan>
+                    <tspan x="0" y="295.2" fill="#FFFFFF" font-family="'Arial'" font-size="18px"> - </tspan>
+                    <tspan x="31" y="295.2" fill="#FCEB76" font-family="'Arial'" font-size="18px">Tư vấn tại chỗ:</tspan>
+                    <tspan x="151.1" y="295.2" fill="#FFFFFF" font-family="'Arial'" font-size="18px"> Người chơi sẽ được đề xuất 3 đáp án từ những sinh viên</tspan>
+                    <tspan x="0" y="316.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px">đã từng làm câu hỏi trắc nghiệm này.</tspan>
+                    <tspan x="0" y="346.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px"> - </tspan>
+                    <tspan x="31" y="346.8" fill="#FCEB76" font-family="'Arial'" font-size="18px">Hỏi ý kiến khán giả: </tspan>
+                    <tspan x="193.1" y="346.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px">Chương trình sẽ thống kê tỉ lệ lựa chọn các phương</tspan>
+                    <tspan x="0" y="376.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px">án trả lời từ bài luyện tập tương ứng với câu hỏi bạn đang gặp phải.</tspan>
+                    <tspan x="0" y="406.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px"> - </tspan>
+                    <tspan x="31" y="406.8" fill="#FCEB76" font-family="'Arial'" font-size="18px">Trợ giúp 50/50</tspan>
+                    <tspan x="148.9" y="406.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px">: Máy tính sẽ bỏ đi 2 phương án sai.</tspan>
+                    <tspan x="0" y="436.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px"> - </tspan>
+                    <tspan x="31" y="436.8" fill="#FCEB76" font-family="'Arial'" font-size="18px">Gọi điện cho người thân: </tspan>
+                    <tspan x="235" y="436.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px">Khi lựa chọn phương án này bạn sẽ nhận được</tspan>
+                    <tspan x="0" y="466.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px">sự trợ giúp từ 1 trong 6 người, bao gồm: Giảng viên, Quản lý học tập, Các</tspan>
+                    <tspan x="0" y="496.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px">sinh viên có điểm số cao. Lựa chọn 1 người để trợ giúp đáp án cho bạn.</tspan>
+                    <tspan x="0" y="526.8" fill="#FCEB76" font-family="'Arial'" font-size="18px">03 </tspan>
+                    <tspan x="25" y="526.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px">- Cách tính điểm</tspan>
+                    <tspan x="0" y="556.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px"> Số điểm LTTNCoint của bạn sẽ được tích lũy sau các lần chơi và đươc</tspan>
+                    <tspan x="0" y="586.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px">xắp xếp theo bảng xếp hạng.</tspan>
+                    <tspan x="0" y="616.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px"> Số điểm làm bài luyện tập của bạn sẽ được tính như một lần làm Luyện</tspan>
+                    <tspan x="0" y="646.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px">tập trắc nghiệm thông thường.</tspan>
+                    <tspan x="0" y="676.8" fill="#ED2224" font-family="'Arial'" font-size="18px">Lưu ý:</tspan>
+                    <tspan x="51.1" y="676.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px"> Khi trả lời sai đáp án, số điểm của bạn sẽ bị trừ về mốc đã đạt được.</tspan>
+                    <tspan x="0" y="706.8" fill="#FFFFFF" font-family="'Arial'" font-size="18px">Nếu chọn chức năng “DỪNG LẠI” số điểm sẽ được bảo toàn.</tspan>
+                </text>
+            </svg>
+        </div>
+        <div id="divcauhoi_div" style="display:none" container="divcauhoi" class="ip mydiv">
+        </div>
+        <div id="divtraloi_div" style="display:none" container="divtraloi" class="ip mydiv">
+        </div>
+        <div id="divbangxephang_div" style="display:none" container="divbangxephang" class="ip mydiv">
+            <svg id="divbangxephang_svg" class="svginside" viewBox="0 0 663 248">
+                <polyline id="XMLID_77_" opacity="0.3" fill="#306DAC" enable-background="new    " points="644,3.4 644,32.9 5.4,32.9 5.4,3.4 
+	644,3.4 " />
+                <line id="divbangxephang_line1" opacity="0.6" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" enable-background="new    " />
+                <line id="divbangxephang_line2" opacity="0.6" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" enable-background="new    " />
+                <line id="divbangxephang_line3" opacity="0.6" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" enable-background="new    " />
+                <line id="divbangxephang_line4" opacity="0.6" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" enable-background="new    " />
+                <line id="divbangxephang_line5" opacity="0.6" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" enable-background="new    " />
+				
+                <text id="XMLID_71_" transform="matrix(1 0 0 1 17.0111 22.969)" fill="#FFFFFF" font-family="'Arial'" font-weight="bold" font-size="13.3037px">Hạng</text>
+                <text id="XMLID_70_" transform="matrix(1 0 0 1 100.1596 22.969)" fill="#FFFFFF" font-family="'Arial'" font-weight="bold" font-size="13.3037px">Họ &amp; Tên</text>
+                <text id="XMLID_69_" transform="matrix(1 0 0 1 337.1323 22.969)" fill="#FFFFFF" font-family="'Arial'" font-weight="bold" font-size="13.3037px">Lớp</text>
+                <text id="XMLID_68_" transform="matrix(1 0 0 1 555.8109 22.969)" fill="#FFFFFF" font-family="'Arial'" font-weight="bold" font-size="13.3037px">LTTNCoint</text>
+				<text id="groupxephang_all" transform="matrix(1 0 0 1 0 51.2385)" display="inline">
+					<tspan id="groupxephang_hang_clone" display="none" x="24.9105" fill="#FBEA77" font-family="'Arial'" font-weight="bold" font-size="13.3037px">01</tspan>
+					<tspan id="groupxephang_name_clone" display="none" x="98.9125" fill="#FFFFFF" font-family="'Arial'" font-size="13.3037px">Nguyễn Văn Anh</tspan>
+					<tspan id="groupxephang_lop_clone" display="none" text-anchor="middle" x="355" fill="#FFFFFF" font-family="'Arial'" font-size="13.3037px">QTH01</tspan>
+					<tspan id="groupxephang_point_clone" display="none" text-anchor="end" x="640" fill="#FFFFFF" font-family="'Arial'" font-size="13.3037px">235.000.000</tspan>
+				</text>
+				<g id="groupxephang_avata_clone" display="none">
+					<image overflow="visible" width="100" height="76" xlink:href="f1.jpg"  transform="matrix(0.25 0 0 0.25 67 36)">
+					</image>
+				</g>
+            </svg>
+        </div>
+		
+		<div id="divbangxephang2_div" style="display:none" container="divbangxephang2" class="ip mydiv">
+            <svg id="divbangxephang2_svg" class="svginside" style="height:181.9px" viewBox="0 0 798 298">
+               <path id="XMLID_92_" opacity="0.2" fill="#2B59A8" enable-background="new    " d="M811-25.5V309"/>
+				<polyline id="XMLID_90_" opacity="0.3" fill="#010101" enable-background="new    " points="3.5,2.5 771.5,2.5 771.5,27 3.5,27 "/>
+				<line id="divbangxephang2_line1" opacity="0.6" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" enable-background="new    "  />
+				<line id="divbangxephang2_line2" opacity="0.6" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" enable-background="new    "  />
+				<line id="divbangxephang2_line3" opacity="0.6" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" enable-background="new    " />
+				<line id="divbangxephang2_line4" opacity="0.6" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" enable-background="new    " />
+				<line id="divbangxephang2_line5" opacity="0.6" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" enable-background="new    " />
+				<text id="XMLID_83_" transform="matrix(1 0 0 1 17.5 23.021)" fill="#FFFFFF" font-family="'Arial'" font-weight="bold" font-size="16px">Hạng</text>
+				<text id="XMLID_81_" transform="matrix(1 0 0 1 117.5 23.021)" fill="#FFFFFF" font-family="'Arial'" font-weight="bold" font-size="16px">Họ &amp; Tên</text>
+				<text id="XMLID_77_" transform="matrix(1 0 0 1 402.5 23.021)" fill="#FFFFFF" font-family="'Arial'" font-weight="bold" font-size="16px"> Lớp</text>
+				<text id="XMLID_75_" transform="matrix(1 0 0 1 665.5 23.021)" fill="#FFFFFF" font-family="'Arial'" font-weight="bold" font-size="16px"> LTTNCoint</text>
+				<text id="groupxephang2_all" transform="matrix(1 0 0 1 0 60.021)" display="inline">
+					<tspan id="groupxephang2_hang_clone" display="none" x="27" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="16px">01</tspan>
+					<tspan id="groupxephang2_name_clone" display="none" x="116" fill="#FFFFFF" font-family="'Arial'" font-size="16px">Nguyễn Văn Anh</tspan>
+					<tspan id="groupxephang2_lop_clone" display="none" text-anchor="middle" x="418" fill="#FFFFFF" font-family="'Arial'" font-size="16px">QTH01</tspan>
+					<tspan id="groupxephang2_point_clone" display="none" text-anchor="end" x="750" fill="#FFFFFF" font-family="'Arial'" font-size="16px">235.000.000</tspan>
+				</text>
+				<g id="groupxephang2_avata_clone">
+					<image overflow="visible" width="100" height="76" xlink:href="f1.jpg"  transform="matrix(0.25 0 0 0.25 83 44)">
+					</image>
+				</g>
+            </svg>
+        </div>
+    </div>
+    <svg id="helpSVG" style="display:none" class="content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720">
+        <g id="MainHelp" display="none" class="app">
+            <path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd" fill="#190751" stroke="#B8D2F1" stroke-width="3" stroke-miterlimit="10" d="
+		M113.479,151.667h789c16.568,0,30,13.432,30,30v229c0,16.568-13.432,30-30,30h-789c-16.568,0-30-13.432-30-30v-229
+		C83.479,165.099,96.91,151.667,113.479,151.667z" />
+
+            <path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd" fill="#140643" stroke="#B8D2F1" stroke-width="3" stroke-miterlimit="10" d="
+		M219.631,274.938c31.342,0,56.75,25.408,56.75,56.75c0,31.342-25.408,56.75-56.75,56.75c-31.342,0-56.75-25.408-56.75-56.75
+		C162.881,300.346,188.289,274.938,219.631,274.938z" />
+            <text transform="matrix(1 0 0 1 170.8135 199.6665)">
+                <tspan x="0" y="0" fill="#FFFFFF" font-family="'Arial'" font-size="20">Bạn đang </tspan>
+                <tspan x="-8.325" y="24" fill="#FFFFFF" font-family="'Arial'" font-size="20">dụng quyền</tspan>
+                <tspan x="6.792" y="48" fill="#FFFFFF" font-family="'Arial'" font-size="20">trợ giúp:</tspan>
+            </text>
+
+            <image overflow="visible" width="89" height="40" id="btTroGiupIcon" xlink:href="images/btTroGiupOK.png" transform="matrix(1 0 0 1 820.999 389)">
+            </image>
+            <g id="50_50" display="none" class="help">
+
+                <image display="inline" overflow="visible" width="87" height="81" xlink:href="images/50_50icon.png" transform="matrix(0.9459 0 0 0.9459 178 295)">
+                </image>
+
+                <text transform="matrix(1 0 0 1 190.8091 417.834)" display="inline" fill="#FFFFFF" font-family="'Arial'" font-size="20">50/50</text>
+                <text transform="matrix(1 0 0 1 392.9229 234.333)" display="inline">
+                    <tspan x="0" y="0" fill="#FFFFFF" font-family="'Arial'" font-size="20">MÁY TÍNH SẼ TỰ ĐỘNG BỎ ĐI </tspan>
+                    <tspan x="57.017" y="36" fill="#FFFFFF" font-family="'Arial'" font-size="20">2 PHƯƠNG ÁN SAI</tspan>
+                    <tspan x="-5.034" y="72" fill="#FFFFFF" font-family="'Arial'" font-size="20">BẠN ĐÃ CÓ THỂ CHỌN ĐÁP ÁN</tspan>
+                    <tspan x="26.074" y="108" fill="#FFFFFF" font-family="'Arial'" font-size="20">NHẤN “OK” ĐỂ TIẾP TỤC</tspan>
+                </text>
+
+
+            </g>
+            <g id="ykienkhangia" display="none" class="help">
+                <text transform="matrix(1 0 0 1 129.0503 419)" display="inline" fill="#FFFFFF" font-family="'Arial'" font-size="20">Hỏi ý kiến khán giả</text>
+
+                <image display="inline" overflow="visible" width="95" height="87" xlink:href="images/ykienkhangiaIcon.png" transform="matrix(1 0 0 1 175 287.5)">
+                </image>
+                <line fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" x1="405.832" y1="203.5" x2="405.832" y2="396.167" />
+                <line fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" x1="403.832" y1="394.167" x2="808.498" y2="394.167" />
+                <g id="chart"></g>
+            </g>
+            <g id="tuvantaicho" display="none" class="help">
+                <text transform="matrix(1 0 0 1 151.2671 420.333)" display="inline" fill="#FFFFFF" font-family="'Arial'" font-size="20">Tư vấn tại chỗ</text>
+                <text id="tuvantaicho_dapan" transform="matrix(1 0 0 1 381 252.333)" style="white-space: pre" display="inline" fill="#FDEC75" font-family="'Arial'" font-size="70">A        A        C</text>
+                <text id="tuvantaicho_name1" transform="matrix(1 0 0 1 405 360)" text-anchor="middle" display="inline" fill="#FFFFFF" font-family="'Arial'" font-size="20">X</text>
+                <text id="tuvantaicho_name2" transform="matrix(1 0 0 1 605 360)" text-anchor="middle" display="inline" fill="#FFFFFF" font-family="'Arial'" font-size="20">Y</text>
+                <text id="tuvantaicho_name3" transform="matrix(1 0 0 1 805 360)" text-anchor="middle" display="inline" fill="#FFFFFF" font-family="'Arial'" font-size="20">Z</text>
+                <text transform="matrix(1 0 0 1 471.8354 181.666)" display="inline" fill="#FFFFFF" font-family="'Arial'" font-size="20">CÁC PHƯƠNG ÁN ĐỀ XUẤT</text>
+                <image id="tuvantaicho_avata1" display="inline" overflow="visible" width="47" height="55" xlink:href="images/tuvantaichoavata.png" transform="matrix(1 0 0 1 381 265.9375)">
+                </image>
+
+                <image id="tuvantaicho_avata2" display="inline" overflow="visible" width="47" height="55" xlink:href="images/tuvantaichoavata.png" transform="matrix(1 0 0 1 580.667 265.9375)">
+                </image>
+
+                <image id="tuvantaicho_avata3" display="inline" overflow="visible" width="47" height="55" xlink:href="images/tuvantaichoavata.png" transform="matrix(1 0 0 1 782.334 268.667)">
+                </image>
+
+
+                <image display="inline" overflow="visible" width="84" height="92" xlink:href="images/tuvantaichoIcon.png" transform="matrix(1 0 0 1 175.3335 298)">
+                </image>
+            </g>
+
+            <g id="goidienchonguoithan" display="none" class="help">
+                <text transform="matrix(1 0 0 1 111.7656 417)" fill="#FFFFFF" font-family="'Arial'" font-size="20">Gọi điện cho người thân</text>
+                <image overflow="visible" width="86" height="86" xlink:href="images/goidienthoaiicon.png" transform="matrix(1 0 0 1 176.1484 290.6875)">
+                </image>
+				<g id="goidienchonguoithan_1" display="none" class="help">
+					<text transform="matrix(1 0 0 1 305 187.667)" fill="#FFFFFF" font-family="'Arial'" font-size="19">CHỌN 1 TRONG NHỮNG NGƯỜI DƯỚI ĐÂY ĐỂ TRỢ GIÚP CHO BẠN</text>
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#2F395B" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="
+				M363.833,197.938h95c2.762,0,5,2.238,5,5v57c0,2.762-2.238,5-5,5h-95c-2.762,0-5-2.238-5-5v-57
+				C358.833,200.176,361.072,197.938,363.833,197.938z" />
+					<text transform="matrix(1 0 0 1 400 282.167)" text-anchor="middle">
+						<!-- <tspan id="goidienchonguoithan_chucvu1" x="0" y="0" fill="#FDEC75" font-family="'Arial'" font-size="14">A: </tspan> -->
+						<tspan id="goidienchonguoithan_ten1" x="16" y="0" fill="#FEFEFE" font-family="'Arial'" font-size="14">A</tspan>
+                        <tspan id="goidienchonguoithan_chon1" display="none" x="16" y="0" fill="#FEFEFE" font-family="'Arial'" font-size="14">A</tspan>
+					</text>
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#2F395B" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="
+				M561.5,197.938h95c2.762,0,5,2.238,5,5v57c0,2.762-2.238,5-5,5h-95c-2.762,0-5-2.238-5-5v-57
+				C556.5,200.176,558.738,197.938,561.5,197.938z" />
+					<text transform="matrix(1 0 0 1 600 282.167)" text-anchor="middle">
+						<tspan id="goidienchonguoithan_ten2" x="16" y="0" fill="#FEFEFE" font-family="'Arial'" font-size="14">A</tspan>
+                        <tspan id="goidienchonguoithan_chon2" display="none" x="16" y="0" fill="#FEFEFE" font-family="'Arial'" font-size="14">A</tspan>
+					</text>
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#2F395B" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="
+				M753.501,197.938h95c2.762,0,5,2.238,5,5v57c0,2.762-2.238,5-5,5h-95c-2.762,0-5-2.238-5-5v-57
+				C748.501,200.176,750.739,197.938,753.501,197.938z" />
+					<text transform="matrix(1 0 0 1 800 282.167)" text-anchor="middle">
+						<tspan id="goidienchonguoithan_ten3" x="16" y="0" fill="#FEFEFE" font-family="'Arial'" font-size="14">A</tspan>
+                        <tspan id="goidienchonguoithan_chon3" display="none" x="16" y="0" fill="#FEFEFE" font-family="'Arial'" font-size="14">A</tspan>
+					</text>
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#2F395B" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="
+				M363.833,295.271h95c2.762,0,5,2.238,5,5v57c0,2.762-2.238,5-5,5h-95c-2.762,0-5-2.238-5-5v-57
+				C358.833,297.51,361.072,295.271,363.833,295.271z" />
+					<text transform="matrix(1 0 0 1 400.6978 380.501)" text-anchor="middle">
+						<tspan id="goidienchonguoithan_ten4" x="16" y="0" fill="#FEFEFE" font-family="'Arial'" font-size="14">A</tspan>
+                        <tspan id="goidienchonguoithan_chon4" display="none" x="16" y="0" fill="#FEFEFE" font-family="'Arial'" font-size="14">A</tspan>
+					</text>
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#2F395B" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="
+				M561.5,295.271h95c2.762,0,5,2.238,5,5v57c0,2.762-2.238,5-5,5h-95c-2.762,0-5-2.238-5-5v-57
+				C556.5,297.51,558.738,295.271,561.5,295.271z" />
+					<text transform="matrix(1 0 0 1 600 380.501)" text-anchor="middle">
+						<tspan id="goidienchonguoithan_ten5" x="16" y="0" fill="#FEFEFE" font-family="'Arial'" font-size="14">A</tspan>
+                        <tspan id="goidienchonguoithan_chon5" display="none" x="16" y="0" fill="#FEFEFE" font-family="'Arial'" font-size="14">A</tspan>
+					</text>
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#2F395B" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="
+				M753.501,295.271h95c2.762,0,5,2.238,5,5v57c0,2.762-2.238,5-5,5h-95c-2.762,0-5-2.238-5-5v-57
+				C748.501,297.51,750.739,295.271,753.501,295.271z" />
+					<text transform="matrix(1 0 0 1 800 380.501)" text-anchor="middle">
+						<tspan id="goidienchonguoithan_ten6" x="16" y="0" fill="#FEFEFE" font-family="'Arial'" font-size="14">A</tspan>
+                        <tspan id="goidienchonguoithan_chon6" display="none" x="16" y="0" fill="#FEFEFE" font-family="'Arial'" font-size="14">A</tspan>
+					</text>
+
+
+					<image id="goidienchonguoithan_avata1" overflow="visible" width="109" height="71" xlink:href="images/goidienthoaiAvata.png" transform="matrix(1 0 0 1 357.6665 196.666)">
+					</image>
+					<image id="goidienchonguoithan_avata4" overflow="visible" width="109" height="71" xlink:href="images/goidienthoaiAvata.png" transform="matrix(1 0 0 1 357.6665 293.1885)">
+					</image>
+					<image id="goidienchonguoithan_avata2" overflow="visible" width="109" height="71" xlink:href="images/goidienthoaiAvata.png" transform="matrix(1 0 0 1 554.8325 196.666)">
+					</image>
+					<image id="goidienchonguoithan_avata5" overflow="visible" width="109" height="71" xlink:href="images/goidienthoaiAvata.png" transform="matrix(1 0 0 1 554.8325 293.1885)">
+					</image>
+					<image id="goidienchonguoithan_avata6" overflow="visible" width="109" height="71" xlink:href="images/goidienthoaiAvata.png" transform="matrix(1 0 0 1 746.501 293.1875)">
+					</image>
+					<image id="goidienchonguoithan_avata3" overflow="visible" width="109" height="71" xlink:href="images/goidienthoaiAvata.png" transform="matrix(1 0 0 1 746.834 196.666)">
+					</image>
+					<rect id="goidien1_event" opacity="0.0001" x="356.8" y="196.9" fill="#FFFFFF" width="113.8" height="72"/>
+					<rect id="goidien2_event" opacity="0.0001" x="553.5" y="196.9" fill="#FFFFFF" width="113.8" height="72"/>
+					<rect id="goidien3_event" opacity="0.0001" x="746.5" y="197.2" fill="#FFFFFF" width="113.8" height="72"/>
+					<rect id="goidien4_event" opacity="0.0001" x="356.5" y="292.7" fill="#FFFFFF" width="113.8" height="72"/>
+					<rect id="goidien5_event" opacity="0.0001" x="554.5" y="292.7" fill="#FFFFFF" width="113.8" height="72"/>
+					<rect id="goidien6_event" opacity="0.0001" x="746.5" y="292.7" fill="#FFFFFF" width="113.8" height="72"/>
+				</g>
+				<g id="goidienchonguoithan_2" display="none" class="help" transform="translate(-10,-20)">
+			<path id="XMLID_7_" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M579,358H389c-6.6,0-12-5.4-12-12
+				V224c0-6.6,5.4-12,12-12h190c6.6,0,12,5.4,12,12v122C591,352.6,585.6,358,579,358z"/>
+			<path id="XMLID_6_" fill="#2F3A5B" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" d="M861,360H671c-6.6,0-12-5.4-12-12
+				V226c0-6.6,5.4-12,12-12h190c6.6,0,12,5.4,12,12v122C873,354.6,867.6,360,861,360z"/>
+			<!-- <text id="XMLID_5_" transform="matrix(1 0 0 1 726.8916 328.167)" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="100px">A</text> -->
+            <text id="goidienchonguoithan_dapanchon" transform="matrix(1 0 0 1 726.8916 328.167)" fill="#FCEB76" font-family="'Arial'" font-weight="bold" font-size="100px">A</text>
+
+			<text id="XMLID_4_" transform="matrix(1 0 0 1 670.7734 400)" fill="#FFFFFF" font-family="'Arial'" font-size="20px">Phương án lựa chọn</text>
+			<!-- <text id="XMLID_3_" transform="matrix(1 0 0 1 392.9463 400)"><tspan x="0" y="0" fill="#FCEB76" font-family="'Arial'" font-size="20px">GV:</tspan><tspan x="34.5" y="0" fill="#FFFFFF" font-family="'Arial'" font-size="20px"> Phan Thế Công</tspan></text> -->
+            <text id="XMLID_3_" transform="matrix(1 0 0 1 392.9463 400)">
+                <tspan id="goidienchonguoithan_2_hoten" x="34.5" y="0" fill="#FFFFFF" font-family="'Arial'" font-size="20px"> Phan Thế Công</tspan>
+            </text>
+			<g>
+				<defs>
+					<path id="XMLID_1_" d="M576.8,356.5H391.3c-6.6,0-12-5.4-12-12V225.5c0-6.6,5.4-12,12-12h185.5c6.6,0,12,5.4,12,12v118.9
+						C588.8,351.1,583.3,356.5,576.8,356.5z"/>
+				</defs>
+				<clipPath id="XMLID_65_">
+					<use xlink:href="#XMLID_1_"  overflow="visible"/>
+				</clipPath>
+				<g clip-path="url(#XMLID_65_)">
+					
+						<image id="goidienchonguoithan_avatar" overflow="visible" width="109" height="71" id="XMLID_2_" xlink:href="images/goidienthoaiAvata.png"  transform="matrix(2.0734 0 0 2.0734 371 210.535)">
+					</image>
+				</g>
+			</g>
+			</g>
+			</g>
+			
+			
+
+            <path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#B8D2F1" stroke-width="3" stroke-miterlimit="10" d="
+		M219.632,274.938c31.341,0,56.75,25.408,56.75,56.75c0,31.343-25.408,56.751-56.75,56.751c-31.342,0-56.75-25.408-56.75-56.751
+		C162.882,300.346,188.29,274.938,219.632,274.938z" />
+            <rect id="btTroGiupOK_event" opacity="0.001" x="819.999" y="389" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" width="89" height="40" />
+
+        </g>
+    </svg>
+    <script src="js/utils.js"></script>
+    <script src="js/shortcut.js"></script>
+    <script src="js/initInput.js"></script>
+    <script src="js/TbManager.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/circleTimeCountDown.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/consult.js"></script>
+	<script src="js/audioManager.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/event.js"></script>
+</body>
+
+</html>
